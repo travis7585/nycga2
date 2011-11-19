@@ -18,7 +18,7 @@ body {
 }
 
 a {
-	color:#495d79;
+	color:#335D99;
 	font-weight:500;
 	text-decoration: none;
 }
@@ -256,6 +256,7 @@ div#header {
   display: block !important;
   background-color: white;
   border-left: 5px solid #DDD;
+  border-right: 5px solid #DDD;
   border-bottom:1px solid #DDD;
   margin: 10px 0px 0 0px;
   font-size:1.5em;
@@ -301,7 +302,7 @@ div#header {
 		background: linear-gradient(top,  #ffcc00 0%,#ffcc33 100%); /* W3C */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', endColorstr='#ffcc33',GradientType=0 ); /* IE6-9 */
 	color:#262626;
-	padding: 10px 20px;
+	padding: 10px 15px;
 }
 
 #nav li.selected a,
@@ -511,9 +512,20 @@ ul#groups-list div.item-type {
     float: left;
     width: 20%;
 }
-.group-button {
-	padding-top:0px;
+
+.my-groups ul#groups-list div.item-type {
+    float: left;
+    width: 0%;
 }
+
+.my-groups .group-subscription-div {
+	position: relative;
+	bottom: 8px;
+}
+
+/*.group-button {
+	padding-top:0px;
+}*/
 
 ul.item-list li div.action {
     top: 25px;
@@ -541,12 +553,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', end
 }
 
 div#pag-bottom {
-margin-top: 1px;
+	clear:both;
 }
 
 #groups-dir-list .group-subscription-div {
        display:none;
 }
+
+.group-members div.item-list-tabs#subnav {
+	margin: -35px -10px 15px -19px;
+}
+
+
 
 /****************** members list **************************/
 
@@ -620,6 +638,25 @@ div.item-list-tabs ul li:hover a span, div.item-list-tabs ul li.sfhover a span {
 
 /******* group pages***************/
 
+.groups .bpfb_actions_container, .bpfb_preview_container {
+   	 float: left;
+	 width: 70%;
+}
+	
+.groups div#whats-new-options {
+	 float: left;
+	 width: 30%;
+}
+.groups .activity {
+	clear: both;
+}
+
+.groups #item-body form#whats-new-form {
+    border-bottom: 1px solid #DDDDDD;
+    margin: 20px 0 10px;
+    padding-bottom: 50px;
+}
+
 .groups div #whats-new-options, /*.activity div#whats-new-options*/ {
 	position: relative;
 	bottom: 55px;
@@ -639,7 +676,7 @@ div.item-list-tabs ul li:hover a span, div.item-list-tabs ul li.sfhover a span {
 }
 
 .gtags_chooser span {
-	color:#495d79;
+	color:#335D99;
 }
 
 table.forum tr.sticky td {
@@ -662,6 +699,14 @@ table.forum tr.sticky td {
 	margin: 5px 0;
 	max-width: 650px;
 }
+
+.group-forum-topic .ass-topic-subscribe {
+    margin: 30px 0;
+}
+
+ul#topic-post-list li.alt {
+	background: transparent;
+}
 /********************pages ********************/
 
 h3.pagetitle {
@@ -679,7 +724,7 @@ a.more-link {
 }
 
 div#content .padder {
-    /* border-right: 10px solid #ddd; */
+    border-right: 10px solid #ddd;
 }
 
 div.entry {
@@ -710,7 +755,13 @@ p.comments-closed.pings-open {
 	font-size:16px;
 }
 
+/**************** single page ***********************/
 
+/*.single div#container {
+	padding-top: 40px;
+}
+
+*/
 /***************** how to help page *****************/
 #post-359 form p {
 	width:10px;
