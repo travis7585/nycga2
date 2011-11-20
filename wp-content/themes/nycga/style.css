@@ -701,12 +701,12 @@ table.forum tr.sticky td {
 }
 
 .group-forum-topic .ass-topic-subscribe {
-    margin: 30px 0;
+    margin: 10px 0 40px 0 !important;
 }
 
-ul#topic-post-list li.alt {
+/*ul#topic-post-list li.alt {
 	background: transparent;
-}
+}*/
 /********************pages ********************/
 
 h3.pagetitle {
