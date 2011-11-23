@@ -54,7 +54,7 @@
 		</div><!-- #header -->
 		</div> <!-- header-section -->
 
-		<?php if( is_user_logged_in() is_dynamic_sidebar( 'Hero-login' ) ){ 
+		<?php if( is_user_logged_in() && is_dynamic_sidebar( 'Hero-login' ) ){ 
 		do_action( 'bp_before_sidebar' ); ?>
         
     <!-- NO LOGIN -->
