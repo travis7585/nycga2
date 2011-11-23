@@ -56,7 +56,7 @@
         
     <!-- NO LOGIN -->
 
-		<?php if( is_user_logged_in() && dynamic_sidebar( 'Hero-login' ) ){ 
+		<?php if( is_user_logged_in() && is_active_sidebar( 'Hero-login' ) ){ 
 		do_action( 'bp_before_sidebar' ); ?>
 
 		<div id="hero-login" role="complementary" class="hero">
@@ -69,7 +69,7 @@
         
     <!-- LOGIN -->
 
-		<?php if( ! is_user_logged_in() && dynamic_sidebar( 'Hero-no-login' ) ){ 
+		<?php if( ! is_user_logged_in() && is_active_sidebar( 'Hero-no-login' ) ){ 
 		do_action( 'bp_before_sidebar' ); ?>
 
 		<div id="hero-no-login" role="complementary" class="hero">
