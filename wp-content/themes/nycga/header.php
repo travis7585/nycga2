@@ -53,11 +53,11 @@
 
 		</div><!-- #header -->
 		</div> <!-- header-section -->
-        
-    <!-- NO LOGIN -->
 
 		<?php if( is_user_logged_in() && is_active_sidebar( 'Hero-login' ) ){ 
 		do_action( 'bp_before_sidebar' ); ?>
+        
+    <!-- NO LOGIN -->
 
 		<div id="hero-login" role="complementary" class="hero">
 		
@@ -65,12 +65,12 @@
 		</div><!-- #sidebar -->
 
 		<?php do_action( 'bp_after_sidebar' );
-		} ?>
-        
-    <!-- LOGIN -->
+		} else { echo nothing } ?>
 
 		<?php if( ! is_user_logged_in() && is_active_sidebar( 'Hero-no-login' ) ){ 
 		do_action( 'bp_before_sidebar' ); ?>
+        
+    <!-- LOGIN -->
 
 		<div id="hero-no-login" role="complementary" class="hero">
 		
