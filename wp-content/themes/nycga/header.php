@@ -57,27 +57,27 @@
     <!-- NO LOGIN -->
 
 		<?php if( ! is_user_logged_in() ){ 
-		do_action( 'bp_before_sidebar' ) ?>
+		do_action( 'bp_before_sidebar' ); ?>
 
 		<div id="Hero-login" role="complementary class="extra-sidebar">
 		
 			<?php dynamic_sidebar( 'Hero-login' ) ?>
 		</div><!-- #sidebar -->
 
-		<?php do_action( 'bp_after_sidebar' )
+		<?php do_action( 'bp_after_sidebar' );
 		} ?>
         
     <!-- LOGIN -->
 
 		<?php if(is_user_logged_in() ){ 
-		do_action( 'bp_before_sidebar' ) ?>
+		do_action( 'bp_before_sidebar' ); ?>
 
 		<div id="Hero-login" role="complementary class="extra-sidebar">
 		
 			<?php dynamic_sidebar( 'Hero-no-login' ) ?>
 		</div><!-- #sidebar -->
 
-		<?php do_action( 'bp_after_sidebar' )
+		<?php do_action( 'bp_after_sidebar' );
 		} ?>
         
 		<?php do_action( 'bp_after_header' ) ?>
