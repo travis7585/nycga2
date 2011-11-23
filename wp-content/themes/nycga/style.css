@@ -231,6 +231,25 @@ div#header {
 }
 
 
+/**************** hero ***************/
+
+#hero-login .hero {}
+
+#hero-no-login .hero {}
+
+.hero {
+background: #aaaaaa; /* Old browsers */
+background: -moz-linear-gradient(top,  #aaaaaa 0%, #dddddd 20%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#aaaaaa), color-stop(20%,#dddddd)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #aaaaaa 0%,#dddddd 20%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #aaaaaa 0%,#dddddd 20%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #aaaaaa 0%,#dddddd 20%); /* IE10+ */
+background: linear-gradient(top,  #aaaaaa 0%,#dddddd 20%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aaaaaa', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+
+padding:10px;
+}
+
 /**************** home page - news feed fix ***************/
 
 .home-page div#whats-new-options {

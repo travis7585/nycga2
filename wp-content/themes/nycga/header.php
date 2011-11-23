@@ -53,15 +53,13 @@
 
 		</div><!-- #header -->
 		</div> <!-- header-section -->
-		
-		<div id="justAtest"></div>
         
     <!-- NO LOGIN -->
 
 		<?php if( is_user_logged_in() ){ 
 		do_action( 'bp_before_sidebar' ); ?>
 
-		<div id="Hero-login" role="complementary" class="extra-sidebar">
+		<div id="hero-login" role="complementary" class="hero">
 		
 			<?php dynamic_sidebar( 'Hero-login' ) ?>
 		</div><!-- #sidebar -->
@@ -74,7 +72,7 @@
 		<?php if( ! is_user_logged_in() ){ 
 		do_action( 'bp_before_sidebar' ); ?>
 
-		<div id="Hero-no-login" role="complementary" class="extra-sidebar">
+		<div id="hero-no-login" role="complementary" class="hero">
 		
 			<?php dynamic_sidebar( 'Hero-no-login' ) ?>
 		</div><!-- #sidebar -->
