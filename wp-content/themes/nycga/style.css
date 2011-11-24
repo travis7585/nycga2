@@ -775,11 +775,19 @@ p.comments-closed.pings-open {
 }
 
 /**************** single page ***********************/
+<<<<<<< HEAD
 
 /*.single div#container {
 	padding-top: 40px;
 }
 
+=======
+
+/*.single div#container {
+	padding-top: 40px;
+}
+
+>>>>>>> d52c42481fbde4a3aabf7af48ae715458dc5e465
 */
 /***************** how to help page *****************/
 #post-359 form p {
@@ -870,11 +878,11 @@ div.really_simple_share_twitter {
 	margin:0;
 }
 
-.page-template-page-3-sidebars-php .widget {
+/* .page-template-page-3-sidebars-php .widget {
 	margin-bottom:20px;
 	padding-bottom:20px;
 	border-bottom:1px solid #ccc;
-}
+} */
 
  #sidebar-2 {
 	width:50%;
